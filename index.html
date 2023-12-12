@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" ></script>
+
+</head>
+<body>
+
+<div class="row">
+    <div class="col"></div>
+    <center><h1>Calculator</h1>
+        <div class="col-3" id="colnm" style="background-color: rgb(49, 48, 48); padding-top: 25px;">
+        <input id="result" type="text " class="form-control" style="width: 258px;height: 59px; background-color: rgb(79, 100, 67);">
+        <br>
+        <div class="btn mb-1 mx-4" id="buttn">
+        <button id="btnn" onclick="clearText()">C</button>
+        <button id="btnn"  onclick="removeLastCharacter()">&#9003;</button>
+        <button id="btnn" onclick="displayNumber('%')">%</button>
+        <button id="btnn" onclick="displayNumber('/')">&#247;</button>
+        <br>
+        <button onclick="displayNumber(7)">7</button>
+        <button onclick="displayNumber(8)">8</button>
+        <button onclick="displayNumber(9)">9</button>
+        <button id="btnn" onclick="displayNumber('*')">x</button>
+        <br>
+        <button onclick="displayNumber(4)">4</button>
+        <button onclick="displayNumber(5)">5</button>
+        <button onclick="displayNumber(6)">6</button>
+        <button id="btnn" onclick="displayNumber('-')">-</button>
+        <br>
+        <button onclick="displayNumber(1)">1</button>
+        <button onclick="displayNumber(2)">2</button>
+        <button onclick="displayNumber(3)">3</button>
+        <button id="btnn" onclick="displayNumber('+')">+</button>
+        <br>
+        <button onclick="displayNumber(0)" style=>0</button>
+        <button onclick="displayNumber('.')">.</button>
+        <button id="btn" onclick="evaluateExpression()">=</button>
+        <br>
+    </div>
+    </div>
+</div>
+</center>
+
+</body>
+
+</html>
